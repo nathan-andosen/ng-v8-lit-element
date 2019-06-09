@@ -6,7 +6,9 @@ This is an example app of how to use Lit element with Angular v8 (including IE11
 
 ### Setup
 
-
+1. Clone the repo: ``git clone https://github.com/nathan-andosen/ng-v8-lit-element.git``
+1. ``cd ng-v8-lit-element``
+1. ``npm install``
 
 ### Commands:
 
@@ -14,7 +16,7 @@ This is an example app of how to use Lit element with Angular v8 (including IE11
 
 ``npm run start -- --configuration es5`` - Start the dev server with es5 code, used for development in IE11.
 
-## Steps required to get add Lit element to an Angular app
+## Steps required to add Lit element to an Angular app
 
 ___NOTE__: All these steps have already been done in this repository. These steps are provided in case anyone needs to update their current Angular app._
 

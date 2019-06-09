@@ -1,14 +1,12 @@
 const webpack = require('webpack');
 const pkg = require('./package.json');
 const path = require('path');
- 
-module.exports = (config, options) => {
-  config.plugins.push(
-    new webpack.DefinePlugin({
-      'APP_VERSION': JSON.stringify(pkg.version),
-    }),
-  );
 
+module.exports = (config, options) => {
+  /**
+   * We need to add a rule to compile the lit-element module (which is 
+   * shipped in es6 format) to es5
+   */
   config.module.rules.push({
     test: /\.js$/,
     include: [
